@@ -9,9 +9,11 @@ import XCTest
 @testable import TestingSwift
 
 class ConverterTests: XCTestCase {
+    
+    var sut: Converter!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = Converter()
     }
 
     override func tearDownWithError() throws {
@@ -32,7 +34,6 @@ class ConverterTests: XCTestCase {
     
     func DISABLE_test_Fahrenheit_To_Celcius() {
         // Given
-        let sut = Converter()
         let input1 = 32.0
         let input2 = 212.0
         
@@ -46,7 +47,7 @@ class ConverterTests: XCTestCase {
     }
     
     func DISABLE_test_32Fahrenheit_To_0Celcius() {
-        let sut = Converter()
+//        let sut = Converter()
         let input1 = 32.0
         let output1 = sut.convertToCelcius(fahrenheit: input1)
         XCTAssertEqual(output1, 0, "Celcius")
@@ -54,10 +55,23 @@ class ConverterTests: XCTestCase {
     }
     
     func DISABLE_test_212Fahrenheit_To_32Celcius() {
-        let sut = Converter()
+//        let sut = Converter()
         let input2 = 212.0
         let output2 = sut.convertToCelcius(fahrenheit: input2)
         XCTAssertEqual(output2, 100, "Celcius")
     }
+    
+    func test_32Fahrenheit_To_0Celcius() {
+        let input1 = 32.0
+        let output1 = sut.convertToCelcius(fahrenheit: input1)
+        XCTAssertEqual(output1, 0, "Celcius")
+    }
+    
+    func test_212Fahrenheit_To_32Celcius() {
+        let input2 = 212.0
+        let output2 = sut.convertToCelcius(fahrenheit: input2)
+        XCTAssertEqual(output2, 100, "Celcius")
+    }
+    
 
 }
