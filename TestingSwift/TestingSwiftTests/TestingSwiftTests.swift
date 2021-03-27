@@ -29,5 +29,22 @@ class TestingSwiftTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testHaterStartNicely() {
+        let hater = Hater()
+        XCTAssertFalse(hater.hating)
+    }
+    
+    func testHatersAfterBadDay() {
+        var hater = Hater()
+        hater.hadABadDay()
+        XCTAssertTrue(hater.hating)
+    }
+    
+    func testHatersAfterGoodDay() {
+        var hater = Hater()
+        hater.hadAGoodDay()
+        XCTAssertFalse(hater.hating)
+    }
 
 }
