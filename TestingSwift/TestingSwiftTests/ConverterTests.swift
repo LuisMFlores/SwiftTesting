@@ -62,16 +62,21 @@ class ConverterTests: XCTestCase {
     }
     
     func test_32Fahrenheit_To_0Celcius() {
-        let input1 = 32.0
-        let output1 = sut.convertToCelcius(fahrenheit: input1)
-        XCTAssertEqual(output1, 0, "Celcius")
+        let inputInFahrenheit = 32.0
+        let outputInCelcius = sut.convertToCelcius(fahrenheit: inputInFahrenheit)
+        XCTAssertEqual(outputInCelcius, 0, accuracy: 0.000001, "Celcius")
     }
     
     func test_212Fahrenheit_To_32Celcius() {
-        let input2 = 212.0
-        let output2 = sut.convertToCelcius(fahrenheit: input2)
-        XCTAssertEqual(output2, 100, "Celcius")
+        let inputInFahrenheit = 212.0
+        let outputInCelcius = sut.convertToCelcius(fahrenheit: inputInFahrenheit)
+        XCTAssertEqual(outputInCelcius, 100, accuracy: 0.000001, "Celcius")
     }
     
+    func test_100Fahrenheit_To_37Celcius() {
+        let inputInFahrenheit = 100.0
+        let outputInCelcius = sut.convertToCelcius(fahrenheit: inputInFahrenheit)
+        XCTAssertEqual(outputInCelcius, 37.777777, accuracy: 0.000001)
+    }
 
 }
