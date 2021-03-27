@@ -30,7 +30,7 @@ class ConverterTests: XCTestCase {
         }
     }
     
-    func testFahrenheitToCelcius() {
+    func DISABLE_test_Fahrenheit_To_Celcius() {
         // Given
         let sut = Converter()
         let input1 = 32.0
@@ -42,6 +42,21 @@ class ConverterTests: XCTestCase {
         
         // Then
         XCTAssertEqual(output1, 0, "Celcius")
+        XCTAssertEqual(output2, 100, "Celcius")
+    }
+    
+    func DISABLE_test_32Fahrenheit_To_0Celcius() {
+        let sut = Converter()
+        let input1 = 32.0
+        let output1 = sut.convertToCelcius(fahrenheit: input1)
+        XCTAssertEqual(output1, 0, "Celcius")
+        
+    }
+    
+    func DISABLE_test_212Fahrenheit_To_32Celcius() {
+        let sut = Converter()
+        let input2 = 212.0
+        let output2 = sut.convertToCelcius(fahrenheit: input2)
         XCTAssertEqual(output2, 100, "Celcius")
     }
 
