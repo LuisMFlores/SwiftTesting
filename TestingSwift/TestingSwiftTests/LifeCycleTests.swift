@@ -47,5 +47,25 @@ class LifeCycleTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func divisionReminder(of number: Int, dividedBy: Int) -> (quotient: Int, remainder: Int) {
+        let quotient = number / dividedBy
+        let remainder = number % dividedBy
+        return (quotient, remainder)
+    }
+    
+    func verifyDivision(_ result: (quotient: Int, remainder: Int), expectedQuotient: Int, expectedReminder: Int, file: StaticString = #file, line: UInt = #line) {
+        XCTAssertEqual(result.quotient, expectedQuotient, file: file, line: line)
+        XCTAssertEqual(result.remainder, expectedReminder, file: file, line: line)
+    }
+    
+    func test_10Division_3Reminder_To_3Quotient_1Reminder() {
+        let dividend = 10
+        let divisor = 3
+        
+        let results = divisionReminder(of: dividend, dividedBy: divisor)
+        
+        verifyDivision(results, expectedQuotient: 3, expectedReminder: 2)
+    }
 
 }
