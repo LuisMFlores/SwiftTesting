@@ -65,7 +65,7 @@ class LifeCycleTests: XCTestCase {
         
         let results = divisionReminder(of: dividend, dividedBy: divisor)
         
-        verifyDivision(results, expectedQuotient: 3, expectedReminder: 2)
+        verifyDivision(results, expectedQuotient: 3, expectedReminder: 1)
     }
 
 }
