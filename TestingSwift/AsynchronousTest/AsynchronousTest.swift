@@ -110,4 +110,10 @@ class AsynchronousTest: XCTestCase {
         user.upgrade(using: center, to: .gold)
         wait(for: [expectation], timeout: 10.0)
     }
+    
+    func test_Prime_Performance() {
+        measure {
+            _ = PrimeCalculator.calculateSync(upTo: 1_000_000)
+        }
+    }
 }
