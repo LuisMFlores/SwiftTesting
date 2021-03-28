@@ -52,7 +52,7 @@ class AsynchronousTest: XCTestCase {
         wait(for: [wait2SecondsExpectation], timeout: 1.8)
     }
     
-    func test_Primes_Up_To_100_Should_Be_25() {
+    func DISABLED_test_Primes_Up_To_100_Should_Be_25() {
         let maxCount = 100
         let expectation = XCTestExpectation(description: "Calculate primes up to \(maxCount)")
         expectation.expectedFulfillmentCount = 25
@@ -70,5 +70,16 @@ class AsynchronousTest: XCTestCase {
             expection.fulfill()
         }
         wait(for: [expection], timeout: 10.0)
+    }
+    
+    func test_Primes_Up_To_100_Should_Be_25() {
+        let maxCount = 100
+        let progress = PrimeCalculator.calculateProgress(upTo: maxCount) {
+            XCTAssertEqual($0.count, 25)
+        }
+        let predicate = NSPredicate(format: "%@.completedUnitCount == %@", argumentArray: [progress, maxCount])
+        
+        let expectation = XCTNSPredicateExpectation(predicate: predicate, object: progress)
+        wait(for: [expectation], timeout: 10.0)
     }
 }
