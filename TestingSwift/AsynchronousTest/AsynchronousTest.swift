@@ -82,4 +82,32 @@ class AsynchronousTest: XCTestCase {
         let expectation = XCTNSPredicateExpectation(predicate: predicate, object: progress)
         wait(for: [expectation], timeout: 10.0)
     }
+    
+    func test_User_Upgraded_Post_Notification() {
+        let user = User()
+        let expectation = XCTNSNotificationExpectation(name: User.upgradeNotification)
+        user.upgrade()
+        wait(for: [expectation], timeout: 3.0)
+    }
+    
+    func test_User_Upgraded_To_Level_Gold() {
+        let user = User()
+        let expectation = XCTNSNotificationExpectation(name: User.upgradeNotification)
+        expectation.handler = { notification -> Bool in
+            return notification.userInfo![UserLevel.LEVEL_KEY] as! UserLevel == .gold
+        }
+        user.upgrade(to: .gold)
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    func test_User_Upgraded_To_Level_Gold_Using_Custom_Notification_Center() {
+        let user = User()
+        let center = NotificationCenter()
+        let expectation = XCTNSNotificationExpectation(name: User.upgradeNotification, object: nil, notificationCenter: center)
+        expectation.handler = { notification -> Bool in
+            return notification.userInfo![UserLevel.LEVEL_KEY] as! UserLevel == .gold
+        }
+        user.upgrade(using: center, to: .gold)
+        wait(for: [expectation], timeout: 10.0)
+    }
 }
