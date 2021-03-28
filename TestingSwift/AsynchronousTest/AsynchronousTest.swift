@@ -31,7 +31,7 @@ class AsynchronousTest: XCTestCase {
         }
     }
     
-    func test_Primes_Up_To_100_Should_Be_0() {
+    func DISABLE_test_Primes_Up_To_100_Should_Be_0() {
         let maxCount = 10000000
         let expectation = XCTestExpectation(description: "Run some work async")
         PrimeCalculator.calculate(upTo: maxCount) {
@@ -42,4 +42,33 @@ class AsynchronousTest: XCTestCase {
         wait(for: [expectation], timeout: 30.0)
     }
 
+    func test_Start_Move_Delay_For_2_Seconds() {
+        let ai = AI()
+        let wait2SecondsExpectation = XCTestExpectation(description: "AI should wait at least 2 seconds before starting to move")
+        wait2SecondsExpectation.isInverted = true
+        ai.startMove {
+            wait2SecondsExpectation.fulfill()
+        }
+        wait(for: [wait2SecondsExpectation], timeout: 1.8)
+    }
+    
+    func test_Primes_Up_To_100_Should_Be_25() {
+        let maxCount = 100
+        let expectation = XCTestExpectation(description: "Calculate primes up to \(maxCount)")
+        expectation.expectedFulfillmentCount = 25
+        PrimeCalculator.calculateStreaming(upTo: maxCount) { number in
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    func test_Prime_Calculator_Printing_Up_To_100() {
+        let maxCount = 100
+        let expection = XCTestExpectation(description: "Should run 100 times")
+        expection.expectedFulfillmentCount = 100
+        PrimeCalculator.print(upTo: maxCount) {_ in
+            expection.fulfill()
+        }
+        wait(for: [expection], timeout: 10.0)
+    }
 }

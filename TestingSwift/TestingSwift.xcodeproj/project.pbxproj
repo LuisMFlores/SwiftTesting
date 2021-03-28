@@ -22,6 +22,7 @@
 		ABCDAE86260FE937007D91AD /* ThrowingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAE85260FE937007D91AD /* ThrowingTests.swift */; };
 		ABCDAE90261049AE007D91AD /* AsynchronousTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAE8F261049AE007D91AD /* AsynchronousTest.swift */; };
 		ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAE9A26104ADC007D91AD /* PrimeCalculator.swift */; };
+		ABCDAEA32610DA5B007D91AD /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEA22610DA5B007D91AD /* AI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		ABCDAE8F261049AE007D91AD /* AsynchronousTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousTest.swift; sourceTree = "<group>"; };
 		ABCDAE91261049AE007D91AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABCDAE9A26104ADC007D91AD /* PrimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
+		ABCDAEA22610DA5B007D91AD /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				ABCDAE5E260FAF58007D91AD /* Converter.swift */,
 				ABCDAE81260FE91D007D91AD /* Game.swift */,
 				ABCDAE9A26104ADC007D91AD /* PrimeCalculator.swift */,
+				ABCDAEA22610DA5B007D91AD /* AI.swift */,
 			);
 			path = TestingSwift;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				ABCDAE27260ECF96007D91AD /* AppDelegate.swift in Sources */,
 				ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */,
 				ABCDAE5A260ECFB4007D91AD /* Hater.swift in Sources */,
+				ABCDAEA32610DA5B007D91AD /* AI.swift in Sources */,
 				ABCDAE29260ECF96007D91AD /* SceneDelegate.swift in Sources */,
 				ABCDAE5F260FAF58007D91AD /* Converter.swift in Sources */,
 			);
