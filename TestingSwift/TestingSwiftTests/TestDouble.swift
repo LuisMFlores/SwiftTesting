@@ -54,5 +54,27 @@ class TestDouble: XCTestCase {
         XCTAssertFalse(wasBought)
         
     }
+    
+    func test_Viewing_House_Adds_One_To_Viewings() {
+        let house = NewHouse()
+        let startViewings = house.numberOfViewings
+        house.conductViewing()
+        XCTAssertEqual(house.numberOfViewings, startViewings + 1)
+    }
+    
+    func test_Buyer_Viewing_House_Adds_One_To_Viewing() {
+        class NewHouseMock: NewHouseProtocol {
+            var numberOfViewings: Int = 0
+            
+            func conductViewing() {
+                numberOfViewings += 1
+            }
+        }
+        let mock = NewHouseMock()
+        let sut = Buyer()
+        let startViewings = mock.numberOfViewings
+        sut.view(mock)
+        XCTAssertEqual(mock.numberOfViewings, startViewings + 1)
+    }
 
 }

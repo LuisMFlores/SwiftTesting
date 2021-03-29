@@ -32,6 +32,8 @@
 		ABCDAECF26120855007D91AD /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAECE26120855007D91AD /* Tweet.swift */; };
 		ABCDAED426120B2E007D91AD /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAED326120B2E007D91AD /* ShareView.swift */; };
 		ABCDAED926120CB1007D91AD /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAED826120CB1007D91AD /* ShareViewController.swift */; };
+		ABCDAEDE26128A85007D91AD /* Buyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEDD26128A85007D91AD /* Buyer.swift */; };
+		ABCDAEE326128AAC007D91AD /* NewHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEE226128AAC007D91AD /* NewHouse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		ABCDAECE26120855007D91AD /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		ABCDAED326120B2E007D91AD /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		ABCDAED826120CB1007D91AD /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		ABCDAEDD26128A85007D91AD /* Buyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buyer.swift; sourceTree = "<group>"; };
+		ABCDAEE226128AAC007D91AD /* NewHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHouse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 				ABCDAECE26120855007D91AD /* Tweet.swift */,
 				ABCDAED326120B2E007D91AD /* ShareView.swift */,
 				ABCDAED826120CB1007D91AD /* ShareViewController.swift */,
+				ABCDAEDD26128A85007D91AD /* Buyer.swift */,
+				ABCDAEE226128AAC007D91AD /* NewHouse.swift */,
 			);
 			path = TestingSwift;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 				ABCDAED426120B2E007D91AD /* ShareView.swift in Sources */,
 				ABCDAE2B260ECF96007D91AD /* ViewController.swift in Sources */,
 				ABCDAE82260FE91D007D91AD /* Game.swift in Sources */,
+				ABCDAEE326128AAC007D91AD /* NewHouse.swift in Sources */,
 				ABCDAE27260ECF96007D91AD /* AppDelegate.swift in Sources */,
 				ABCDAECF26120855007D91AD /* Tweet.swift in Sources */,
 				ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */,
@@ -321,6 +328,7 @@
 				ABCDAEA92611015C007D91AD /* User.swift in Sources */,
 				ABCDAEC526118A09007D91AD /* UnreleaseAppStub.swift in Sources */,
 				ABCDAEA32610DA5B007D91AD /* AI.swift in Sources */,
+				ABCDAEDE26128A85007D91AD /* Buyer.swift in Sources */,
 				ABCDAE29260ECF96007D91AD /* SceneDelegate.swift in Sources */,
 				ABCDAEC026118636007D91AD /* App.swift in Sources */,
 				ABCDAEAE261146D8007D91AD /* House.swift in Sources */,
