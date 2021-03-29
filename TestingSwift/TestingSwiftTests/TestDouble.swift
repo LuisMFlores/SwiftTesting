@@ -76,5 +76,11 @@ class TestDouble: XCTestCase {
         sut.view(mock)
         XCTAssertEqual(mock.numberOfViewings, startViewings + 1)
     }
+    
+    func test_Unplugged_Device_Shows_Down() {
+        let sut = PowerMonitor(device: DeviceMock(testBatteryState: .unplugged))
+        let message = sut.getStatus()
+        XCTAssertEqual(message, "Power is down")
+    }
 
 }
