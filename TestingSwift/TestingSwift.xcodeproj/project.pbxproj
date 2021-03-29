@@ -29,6 +29,9 @@
 		ABCDAEC026118636007D91AD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEBF26118636007D91AD /* App.swift */; };
 		ABCDAEC526118A09007D91AD /* UnreleaseAppStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEC426118A09007D91AD /* UnreleaseAppStub.swift */; };
 		ABCDAECA26118AC6007D91AD /* TestDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEC926118AC6007D91AD /* TestDouble.swift */; };
+		ABCDAECF26120855007D91AD /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAECE26120855007D91AD /* Tweet.swift */; };
+		ABCDAED426120B2E007D91AD /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAED326120B2E007D91AD /* ShareView.swift */; };
+		ABCDAED926120CB1007D91AD /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAED826120CB1007D91AD /* ShareViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		ABCDAEBF26118636007D91AD /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		ABCDAEC426118A09007D91AD /* UnreleaseAppStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnreleaseAppStub.swift; sourceTree = "<group>"; };
 		ABCDAEC926118AC6007D91AD /* TestDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDouble.swift; sourceTree = "<group>"; };
+		ABCDAECE26120855007D91AD /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		ABCDAED326120B2E007D91AD /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		ABCDAED826120CB1007D91AD /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,9 @@
 				ABCDAEBA26115B20007D91AD /* Cake.swift */,
 				ABCDAEBF26118636007D91AD /* App.swift */,
 				ABCDAEC426118A09007D91AD /* UnreleaseAppStub.swift */,
+				ABCDAECE26120855007D91AD /* Tweet.swift */,
+				ABCDAED326120B2E007D91AD /* ShareView.swift */,
+				ABCDAED826120CB1007D91AD /* ShareViewController.swift */,
 			);
 			path = TestingSwift;
 			sourceTree = "<group>";
@@ -300,10 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCDAED426120B2E007D91AD /* ShareView.swift in Sources */,
 				ABCDAE2B260ECF96007D91AD /* ViewController.swift in Sources */,
 				ABCDAE82260FE91D007D91AD /* Game.swift in Sources */,
 				ABCDAE27260ECF96007D91AD /* AppDelegate.swift in Sources */,
+				ABCDAECF26120855007D91AD /* Tweet.swift in Sources */,
 				ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */,
+				ABCDAED926120CB1007D91AD /* ShareViewController.swift in Sources */,
 				ABCDAE5A260ECFB4007D91AD /* Hater.swift in Sources */,
 				ABCDAEBB26115B20007D91AD /* Cake.swift in Sources */,
 				ABCDAEA92611015C007D91AD /* User.swift in Sources */,
