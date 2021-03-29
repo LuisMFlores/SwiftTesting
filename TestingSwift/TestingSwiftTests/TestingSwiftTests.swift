@@ -65,4 +65,9 @@ class TestingSwiftTests: XCTestCase {
         XCTAssertTrue(suitability)
     }
     
+    func test_3_Ingredients_Cake_Cost_10() {
+        let cake = Cake()
+        XCTAssertEqual(cake.bake(ingredients: ["Chocolate", "Cherries", "Almond"]), 10)
+    }
+    
 }

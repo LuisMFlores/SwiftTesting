@@ -25,6 +25,10 @@
 		ABCDAEA32610DA5B007D91AD /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEA22610DA5B007D91AD /* AI.swift */; };
 		ABCDAEA92611015C007D91AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEA82611015B007D91AD /* User.swift */; };
 		ABCDAEAE261146D8007D91AD /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEAD261146D8007D91AD /* House.swift */; };
+		ABCDAEBB26115B20007D91AD /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEBA26115B20007D91AD /* Cake.swift */; };
+		ABCDAEC026118636007D91AD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEBF26118636007D91AD /* App.swift */; };
+		ABCDAEC526118A09007D91AD /* UnreleaseAppStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEC426118A09007D91AD /* UnreleaseAppStub.swift */; };
+		ABCDAECA26118AC6007D91AD /* TestDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEC926118AC6007D91AD /* TestDouble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		ABCDAEA22610DA5B007D91AD /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
 		ABCDAEA82611015B007D91AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ABCDAEAD261146D8007D91AD /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		ABCDAEBA26115B20007D91AD /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
+		ABCDAEBF26118636007D91AD /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		ABCDAEC426118A09007D91AD /* UnreleaseAppStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnreleaseAppStub.swift; sourceTree = "<group>"; };
+		ABCDAEC926118AC6007D91AD /* TestDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDouble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,9 @@
 				ABCDAEA22610DA5B007D91AD /* AI.swift */,
 				ABCDAEA82611015B007D91AD /* User.swift */,
 				ABCDAEAD261146D8007D91AD /* House.swift */,
+				ABCDAEBA26115B20007D91AD /* Cake.swift */,
+				ABCDAEBF26118636007D91AD /* App.swift */,
+				ABCDAEC426118A09007D91AD /* UnreleaseAppStub.swift */,
 			);
 			path = TestingSwift;
 			sourceTree = "<group>";
@@ -143,6 +154,7 @@
 				ABCDAE3D260ECF9A007D91AD /* TestingSwiftTests.swift */,
 				ABCDAE6E260FB00B007D91AD /* ConverterTests.swift */,
 				ABCDAE7B260FBFA1007D91AD /* LifeCycleTests.swift */,
+				ABCDAEC926118AC6007D91AD /* TestDouble.swift */,
 				ABCDAE3F260ECF9A007D91AD /* Info.plist */,
 				ABCDAE85260FE937007D91AD /* ThrowingTests.swift */,
 			);
@@ -293,9 +305,12 @@
 				ABCDAE27260ECF96007D91AD /* AppDelegate.swift in Sources */,
 				ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */,
 				ABCDAE5A260ECFB4007D91AD /* Hater.swift in Sources */,
+				ABCDAEBB26115B20007D91AD /* Cake.swift in Sources */,
 				ABCDAEA92611015C007D91AD /* User.swift in Sources */,
+				ABCDAEC526118A09007D91AD /* UnreleaseAppStub.swift in Sources */,
 				ABCDAEA32610DA5B007D91AD /* AI.swift in Sources */,
 				ABCDAE29260ECF96007D91AD /* SceneDelegate.swift in Sources */,
+				ABCDAEC026118636007D91AD /* App.swift in Sources */,
 				ABCDAEAE261146D8007D91AD /* House.swift in Sources */,
 				ABCDAE5F260FAF58007D91AD /* Converter.swift in Sources */,
 			);
@@ -309,6 +324,7 @@
 				ABCDAE3E260ECF9A007D91AD /* TestingSwiftTests.swift in Sources */,
 				ABCDAE7C260FBFA1007D91AD /* LifeCycleTests.swift in Sources */,
 				ABCDAE86260FE937007D91AD /* ThrowingTests.swift in Sources */,
+				ABCDAECA26118AC6007D91AD /* TestDouble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

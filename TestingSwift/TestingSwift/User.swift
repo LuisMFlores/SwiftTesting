@@ -12,8 +12,26 @@ enum UserLevel: Int {
     case bronze, silver, gold
 }
 
-struct User {
+protocol UserProtocol {
+    var funds: Decimal { get set }
+    var age: Int { get set }
+    var apps: [AppProtocol] { get set }
+    
+    mutating func buy(app: AppProtocol) -> Bool
+}
+
+struct User: UserProtocol {
     static let upgradeNotification = Notification.Name("UserUpgraded")
+    var funds: Decimal = 0.0
+    var age: Int = 18
+    var apps: [AppProtocol] = []
+    
+    mutating func buy(app: AppProtocol) -> Bool {
+        guard app.canBePurchased(by: self) == true else { return false }
+        apps.append(app)
+        funds -= app.price
+        return true
+    }
     
     func upgrade() {
         DispatchQueue.global().async {
