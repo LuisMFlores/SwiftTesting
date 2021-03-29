@@ -56,5 +56,13 @@ class TestingSwiftTests: XCTestCase {
         
         XCTAssertFalse(hater.hating)
     }
-
+    
+    func test_4Bedrooms_2Bathrooms_Fits_3Bedrooms_2Bathrooms_Requirements() {
+        let house = House(bedrooms: 4, bathrooms: 2)
+        let desiredBathrooms = 2
+        let desireBedrooms = 3
+        let suitability = house.checkSuitability(desireBedrooms: desireBedrooms, desireBathrooms: desiredBathrooms)
+        XCTAssertTrue(suitability)
+    }
+    
 }

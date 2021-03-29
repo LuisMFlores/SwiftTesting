@@ -87,7 +87,7 @@ struct PrimeCalculator {
             sieve[0] = false
             sieve[1] = false
             
-            for number in 2..<max {
+        for number in 2..<max {
                 if sieve[number] == true {
                     for multiple in stride(from: number * number, to: sieve.count, by: number) {
                         sieve[multiple] = false
