@@ -2,15 +2,15 @@
 //  Tweet.swift
 //  TestingSwift
 //
-//  Created by luis flores on 3/29/21.
+//  Created by luis flores on 3/30/21.
 //
 
 import Foundation
 
 struct Tweet {
-    let text: String
-    let author: String
-    let date: Date
+    var text: String
+    var author: String
+    var date: Date
     
     init(text: String, author: String, date: Date = Date()) {
         self.text = text
