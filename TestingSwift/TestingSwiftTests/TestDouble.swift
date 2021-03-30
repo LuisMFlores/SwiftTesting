@@ -38,4 +38,8 @@ class TestDouble: XCTestCase {
         
     }
 
+    func test_Open_Internal_URL() {
+        let sut = URLHandler(urlOpener: UIApplication.shared.open)
+        
+    }
 }

@@ -30,6 +30,9 @@
 		ABCDAEFB2612F379007D91AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEFA2612F379007D91AD /* User.swift */; };
 		ABCDAF0626138EAE007D91AD /* UnreleasedAppStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF0526138EAE007D91AD /* UnreleasedAppStub.swift */; };
 		ABCDAF0E2613A63A007D91AD /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF0D2613A63A007D91AD /* Tweet.swift */; };
+		ABCDAF132613A745007D91AD /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF122613A745007D91AD /* ShareView.swift */; };
+		ABCDAF182613A866007D91AD /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF172613A866007D91AD /* ShareViewController.swift */; };
+		ABCDAF1D2613AC9F007D91AD /* StructHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF1C2613AC9F007D91AD /* StructHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +82,9 @@
 		ABCDAEFA2612F379007D91AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ABCDAF0526138EAE007D91AD /* UnreleasedAppStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnreleasedAppStub.swift; sourceTree = "<group>"; };
 		ABCDAF0D2613A63A007D91AD /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		ABCDAF122613A745007D91AD /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		ABCDAF172613A866007D91AD /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		ABCDAF1C2613AC9F007D91AD /* StructHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,9 @@
 				ABCDAEFA2612F379007D91AD /* User.swift */,
 				ABCDAF0526138EAE007D91AD /* UnreleasedAppStub.swift */,
 				ABCDAF0D2613A63A007D91AD /* Tweet.swift */,
+				ABCDAF122613A745007D91AD /* ShareView.swift */,
+				ABCDAF172613A866007D91AD /* ShareViewController.swift */,
+				ABCDAF1C2613AC9F007D91AD /* StructHandler.swift */,
 			);
 			path = TestingSwift;
 			sourceTree = "<group>";
@@ -303,13 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCDAF132613A745007D91AD /* ShareView.swift in Sources */,
 				ABCDAEF62612F32A007D91AD /* App.swift in Sources */,
 				ABCDAE2B260ECF96007D91AD /* ViewController.swift in Sources */,
 				ABCDAE82260FE91D007D91AD /* Game.swift in Sources */,
 				ABCDAF0E2613A63A007D91AD /* Tweet.swift in Sources */,
 				ABCDAE27260ECF96007D91AD /* AppDelegate.swift in Sources */,
+				ABCDAF182613A866007D91AD /* ShareViewController.swift in Sources */,
 				ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */,
 				ABCDAEFB2612F379007D91AD /* User.swift in Sources */,
+				ABCDAF1D2613AC9F007D91AD /* StructHandler.swift in Sources */,
 				ABCDAE5A260ECFB4007D91AD /* Hater.swift in Sources */,
 				ABCDAEBB26115B20007D91AD /* Cake.swift in Sources */,
 				ABCDAEA32610DA5B007D91AD /* AI.swift in Sources */,
