@@ -29,5 +29,13 @@ class TestDouble: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_User_Cant_Buy_Unreleased_App() {
+        let unreleaseApp = UnreleasedAppStub()
+        var sut = NewUser(funds: 10, age: 30)
+
+        XCTAssertFalse(try sut.buy(unreleaseApp))
+        
+    }
 
 }

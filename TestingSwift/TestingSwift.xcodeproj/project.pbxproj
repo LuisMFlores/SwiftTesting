@@ -23,13 +23,13 @@
 		ABCDAE90261049AE007D91AD /* AsynchronousTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAE8F261049AE007D91AD /* AsynchronousTest.swift */; };
 		ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAE9A26104ADC007D91AD /* PrimeCalculator.swift */; };
 		ABCDAEA32610DA5B007D91AD /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEA22610DA5B007D91AD /* AI.swift */; };
-		ABCDAEA92611015C007D91AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEA82611015B007D91AD /* User.swift */; };
 		ABCDAEAE261146D8007D91AD /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEAD261146D8007D91AD /* House.swift */; };
 		ABCDAEBB26115B20007D91AD /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEBA26115B20007D91AD /* Cake.swift */; };
-		ABCDAEC026118636007D91AD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEBF26118636007D91AD /* App.swift */; };
-		ABCDAEC526118A09007D91AD /* UnreleaseAppStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEC426118A09007D91AD /* UnreleaseAppStub.swift */; };
 		ABCDAECA26118AC6007D91AD /* TestDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEC926118AC6007D91AD /* TestDouble.swift */; };
 		ABCDAECF26120855007D91AD /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAECE26120855007D91AD /* Tweet.swift */; };
+		ABCDAEF62612F32A007D91AD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEF52612F32A007D91AD /* App.swift */; };
+		ABCDAEFB2612F379007D91AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAEFA2612F379007D91AD /* User.swift */; };
+		ABCDAF0626138EAE007D91AD /* UnreleasedAppStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF0526138EAE007D91AD /* UnreleasedAppStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,13 +72,13 @@
 		ABCDAE91261049AE007D91AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABCDAE9A26104ADC007D91AD /* PrimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeCalculator.swift; sourceTree = "<group>"; };
 		ABCDAEA22610DA5B007D91AD /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
-		ABCDAEA82611015B007D91AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ABCDAEAD261146D8007D91AD /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		ABCDAEBA26115B20007D91AD /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
-		ABCDAEBF26118636007D91AD /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		ABCDAEC426118A09007D91AD /* UnreleaseAppStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnreleaseAppStub.swift; sourceTree = "<group>"; };
 		ABCDAEC926118AC6007D91AD /* TestDouble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDouble.swift; sourceTree = "<group>"; };
 		ABCDAECE26120855007D91AD /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		ABCDAEF52612F32A007D91AD /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		ABCDAEFA2612F379007D91AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ABCDAF0526138EAE007D91AD /* UnreleasedAppStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnreleasedAppStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,12 +141,12 @@
 				ABCDAE81260FE91D007D91AD /* Game.swift */,
 				ABCDAE9A26104ADC007D91AD /* PrimeCalculator.swift */,
 				ABCDAEA22610DA5B007D91AD /* AI.swift */,
-				ABCDAEA82611015B007D91AD /* User.swift */,
 				ABCDAEAD261146D8007D91AD /* House.swift */,
 				ABCDAEBA26115B20007D91AD /* Cake.swift */,
-				ABCDAEBF26118636007D91AD /* App.swift */,
-				ABCDAEC426118A09007D91AD /* UnreleaseAppStub.swift */,
 				ABCDAECE26120855007D91AD /* Tweet.swift */,
+				ABCDAEF52612F32A007D91AD /* App.swift */,
+				ABCDAEFA2612F379007D91AD /* User.swift */,
+				ABCDAF0526138EAE007D91AD /* UnreleasedAppStub.swift */,
 			);
 			path = TestingSwift;
 			sourceTree = "<group>";
@@ -303,20 +303,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCDAEF62612F32A007D91AD /* App.swift in Sources */,
 				ABCDAE2B260ECF96007D91AD /* ViewController.swift in Sources */,
 				ABCDAE82260FE91D007D91AD /* Game.swift in Sources */,
 				ABCDAE27260ECF96007D91AD /* AppDelegate.swift in Sources */,
 				ABCDAECF26120855007D91AD /* Tweet.swift in Sources */,
 				ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */,
+				ABCDAEFB2612F379007D91AD /* User.swift in Sources */,
 				ABCDAE5A260ECFB4007D91AD /* Hater.swift in Sources */,
 				ABCDAEBB26115B20007D91AD /* Cake.swift in Sources */,
-				ABCDAEA92611015C007D91AD /* User.swift in Sources */,
-				ABCDAEC526118A09007D91AD /* UnreleaseAppStub.swift in Sources */,
 				ABCDAEA32610DA5B007D91AD /* AI.swift in Sources */,
 				ABCDAE29260ECF96007D91AD /* SceneDelegate.swift in Sources */,
-				ABCDAEC026118636007D91AD /* App.swift in Sources */,
 				ABCDAEAE261146D8007D91AD /* House.swift in Sources */,
 				ABCDAE5F260FAF58007D91AD /* Converter.swift in Sources */,
+				ABCDAF0626138EAE007D91AD /* UnreleasedAppStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
