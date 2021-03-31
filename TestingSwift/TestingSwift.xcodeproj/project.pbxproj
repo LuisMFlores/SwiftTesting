@@ -33,6 +33,9 @@
 		ABCDAF132613A745007D91AD /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF122613A745007D91AD /* ShareView.swift */; };
 		ABCDAF182613A866007D91AD /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF172613A866007D91AD /* ShareViewController.swift */; };
 		ABCDAF1D2613AC9F007D91AD /* StructHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF1C2613AC9F007D91AD /* StructHandler.swift */; };
+		ABCDAF222613B9C0007D91AD /* Buyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF212613B9C0007D91AD /* Buyer.swift */; };
+		ABCDAF272613BA07007D91AD /* NewHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF262613BA07007D91AD /* NewHouse.swift */; };
+		ABCDAF2C2613FFA8007D91AD /* NewHouseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF2B2613FFA8007D91AD /* NewHouseMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		ABCDAF122613A745007D91AD /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		ABCDAF172613A866007D91AD /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		ABCDAF1C2613AC9F007D91AD /* StructHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructHandler.swift; sourceTree = "<group>"; };
+		ABCDAF212613B9C0007D91AD /* Buyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buyer.swift; sourceTree = "<group>"; };
+		ABCDAF262613BA07007D91AD /* NewHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHouse.swift; sourceTree = "<group>"; };
+		ABCDAF2B2613FFA8007D91AD /* NewHouseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHouseMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,9 @@
 				ABCDAF122613A745007D91AD /* ShareView.swift */,
 				ABCDAF172613A866007D91AD /* ShareViewController.swift */,
 				ABCDAF1C2613AC9F007D91AD /* StructHandler.swift */,
+				ABCDAF212613B9C0007D91AD /* Buyer.swift */,
+				ABCDAF262613BA07007D91AD /* NewHouse.swift */,
+				ABCDAF2B2613FFA8007D91AD /* NewHouseMock.swift */,
 			);
 			path = TestingSwift;
 			sourceTree = "<group>";
@@ -313,10 +322,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABCDAF132613A745007D91AD /* ShareView.swift in Sources */,
+				ABCDAF2C2613FFA8007D91AD /* NewHouseMock.swift in Sources */,
+				ABCDAF222613B9C0007D91AD /* Buyer.swift in Sources */,
 				ABCDAEF62612F32A007D91AD /* App.swift in Sources */,
 				ABCDAE2B260ECF96007D91AD /* ViewController.swift in Sources */,
 				ABCDAE82260FE91D007D91AD /* Game.swift in Sources */,
 				ABCDAF0E2613A63A007D91AD /* Tweet.swift in Sources */,
+				ABCDAF272613BA07007D91AD /* NewHouse.swift in Sources */,
 				ABCDAE27260ECF96007D91AD /* AppDelegate.swift in Sources */,
 				ABCDAF182613A866007D91AD /* ShareViewController.swift in Sources */,
 				ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */,

@@ -40,6 +40,22 @@ class TestDouble: XCTestCase {
 
     func test_Open_Internal_URL() {
         let sut = URLHandler(urlOpener: UIApplication.shared.open)
+    }
+    
+    func test_Viewing_House_Adds_One_To_Viewings() {
+        let house = HouseClass()
+        let initialViewings = house.numberOfViewings
+        house.conductViewing()
+        XCTAssertEqual(house.numberOfViewings, initialViewings + 1)
+    }
+    
+    func test_Buyer_Viewing_House_Adds_To_Viewings() {
+        let sut = Buyer()
+        let houseMock = NewHouseMock()
+        let initialNumberOfViewing = houseMock.numberOfViewings
         
+        sut.view(houseMock)
+        
+        XCTAssertEqual(houseMock.numberOfViewings, initialNumberOfViewing + 1)
     }
 }
