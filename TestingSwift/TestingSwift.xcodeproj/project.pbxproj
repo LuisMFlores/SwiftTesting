@@ -36,6 +36,8 @@
 		ABCDAF222613B9C0007D91AD /* Buyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF212613B9C0007D91AD /* Buyer.swift */; };
 		ABCDAF272613BA07007D91AD /* NewHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF262613BA07007D91AD /* NewHouse.swift */; };
 		ABCDAF2C2613FFA8007D91AD /* NewHouseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF2B2613FFA8007D91AD /* NewHouseMock.swift */; };
+		ABCDAF3126142AA2007D91AD /* PowerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF3026142AA2007D91AD /* PowerMonitor.swift */; };
+		ABCDAF3626142E7D007D91AD /* DeviceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF3526142E7D007D91AD /* DeviceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		ABCDAF212613B9C0007D91AD /* Buyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buyer.swift; sourceTree = "<group>"; };
 		ABCDAF262613BA07007D91AD /* NewHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHouse.swift; sourceTree = "<group>"; };
 		ABCDAF2B2613FFA8007D91AD /* NewHouseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHouseMock.swift; sourceTree = "<group>"; };
+		ABCDAF3026142AA2007D91AD /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitor.swift; sourceTree = "<group>"; };
+		ABCDAF3526142E7D007D91AD /* DeviceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 				ABCDAF212613B9C0007D91AD /* Buyer.swift */,
 				ABCDAF262613BA07007D91AD /* NewHouse.swift */,
 				ABCDAF2B2613FFA8007D91AD /* NewHouseMock.swift */,
+				ABCDAF3026142AA2007D91AD /* PowerMonitor.swift */,
+				ABCDAF3526142E7D007D91AD /* DeviceMock.swift */,
 			);
 			path = TestingSwift;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 				ABCDAF132613A745007D91AD /* ShareView.swift in Sources */,
 				ABCDAF2C2613FFA8007D91AD /* NewHouseMock.swift in Sources */,
 				ABCDAF222613B9C0007D91AD /* Buyer.swift in Sources */,
+				ABCDAF3126142AA2007D91AD /* PowerMonitor.swift in Sources */,
 				ABCDAEF62612F32A007D91AD /* App.swift in Sources */,
 				ABCDAE2B260ECF96007D91AD /* ViewController.swift in Sources */,
 				ABCDAE82260FE91D007D91AD /* Game.swift in Sources */,
@@ -333,6 +340,7 @@
 				ABCDAF182613A866007D91AD /* ShareViewController.swift in Sources */,
 				ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */,
 				ABCDAEFB2612F379007D91AD /* User.swift in Sources */,
+				ABCDAF3626142E7D007D91AD /* DeviceMock.swift in Sources */,
 				ABCDAF1D2613AC9F007D91AD /* StructHandler.swift in Sources */,
 				ABCDAE5A260ECFB4007D91AD /* Hater.swift in Sources */,
 				ABCDAEBB26115B20007D91AD /* Cake.swift in Sources */,

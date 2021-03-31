@@ -58,4 +58,14 @@ class TestDouble: XCTestCase {
         
         XCTAssertEqual(houseMock.numberOfViewings, initialNumberOfViewing + 1)
     }
+    
+    func test_Unplugged_Device_Shows_Down() {
+        let unpluggedDevice = DeviceMock(state: .unplugged)
+        let sut = PowerMonitor(device: unpluggedDevice)
+        
+        let message = sut.getStatus()
+        
+        XCTAssertEqual(message, "Power Off")
+    }
+    
 }
