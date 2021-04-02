@@ -39,6 +39,9 @@
 		ABCDAF3126142AA2007D91AD /* PowerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF3026142AA2007D91AD /* PowerMonitor.swift */; };
 		ABCDAF3626142E7D007D91AD /* DeviceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF3526142E7D007D91AD /* DeviceMock.swift */; };
 		ABCDAF5D2616B502007D91AD /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF5C2616B502007D91AD /* News.swift */; };
+		ABCDAF65261754E4007D91AD /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF64261754E4007D91AD /* URLSessionProtocol.swift */; };
+		ABCDAF6A26175675007D91AD /* DataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF6926175675007D91AD /* DataTaskMock.swift */; };
+		ABCDAF6F261756FD007D91AD /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDAF6E261756FD007D91AD /* URLSessionMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,9 @@
 		ABCDAF3026142AA2007D91AD /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitor.swift; sourceTree = "<group>"; };
 		ABCDAF3526142E7D007D91AD /* DeviceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMock.swift; sourceTree = "<group>"; };
 		ABCDAF5C2616B502007D91AD /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		ABCDAF64261754E4007D91AD /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		ABCDAF6926175675007D91AD /* DataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskMock.swift; sourceTree = "<group>"; };
+		ABCDAF6E261756FD007D91AD /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +180,9 @@
 				ABCDAF3026142AA2007D91AD /* PowerMonitor.swift */,
 				ABCDAF3526142E7D007D91AD /* DeviceMock.swift */,
 				ABCDAF5C2616B502007D91AD /* News.swift */,
+				ABCDAF64261754E4007D91AD /* URLSessionProtocol.swift */,
+				ABCDAF6926175675007D91AD /* DataTaskMock.swift */,
+				ABCDAF6E261756FD007D91AD /* URLSessionMock.swift */,
 			);
 			path = TestingSwift;
 			sourceTree = "<group>";
@@ -332,6 +341,7 @@
 			files = (
 				ABCDAF132613A745007D91AD /* ShareView.swift in Sources */,
 				ABCDAF2C2613FFA8007D91AD /* NewHouseMock.swift in Sources */,
+				ABCDAF6F261756FD007D91AD /* URLSessionMock.swift in Sources */,
 				ABCDAF222613B9C0007D91AD /* Buyer.swift in Sources */,
 				ABCDAF3126142AA2007D91AD /* PowerMonitor.swift in Sources */,
 				ABCDAEF62612F32A007D91AD /* App.swift in Sources */,
@@ -341,7 +351,9 @@
 				ABCDAF0E2613A63A007D91AD /* Tweet.swift in Sources */,
 				ABCDAF272613BA07007D91AD /* NewHouse.swift in Sources */,
 				ABCDAE27260ECF96007D91AD /* AppDelegate.swift in Sources */,
+				ABCDAF6A26175675007D91AD /* DataTaskMock.swift in Sources */,
 				ABCDAF182613A866007D91AD /* ShareViewController.swift in Sources */,
+				ABCDAF65261754E4007D91AD /* URLSessionProtocol.swift in Sources */,
 				ABCDAE9B26104ADC007D91AD /* PrimeCalculator.swift in Sources */,
 				ABCDAEFB2612F379007D91AD /* User.swift in Sources */,
 				ABCDAF3626142E7D007D91AD /* DeviceMock.swift in Sources */,

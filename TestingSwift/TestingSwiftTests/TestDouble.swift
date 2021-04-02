@@ -68,4 +68,72 @@ class TestDouble: XCTestCase {
         XCTAssertEqual(message, "Power Off")
     }
     
+    func test_News_Fetch_Loads_Correct_URL() {
+        
+        // Given
+        let url = URL(string: "https://www.google.com")!
+        let sut = News(with: url)
+        let mockURLSession = URLSessionMock()
+        let expectation = XCTestExpectation(description: "Downloading stories")
+        
+        // When
+        sut.fetch(with: mockURLSession) {
+            XCTAssertEqual(mockURLSession.lastURL, url)
+            expectation.fulfill()
+        }
+        
+        // Then
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    func test_News_Fetch_Calls_Resume() {
+        
+        // Given
+        let url = URL(string: "https://www.google.com")!
+        let sut = News(with: url)
+        let mockURLSession = URLSessionMock()
+        let expectation = XCTestExpectation(description: "Downloading stories")
+        
+        sut.fetch(with: mockURLSession) {
+            XCTAssertTrue(mockURLSession.dataTask?.hasStarted ?? false)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    func test_News_Fetch_Data() {
+        
+        // Given
+        let url = URL(string: "https://www.google.com")!
+        let sut = News(with: url)
+        let mockURLSession = URLSessionMock()
+        mockURLSession.testData = Data("Hello World".utf8)
+        let expectation = XCTestExpectation(description: "Downloading stories")
+        
+        sut.fetch(with: mockURLSession) {
+            XCTAssertEqual(sut.stories, "Hello World")
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    func test_News_Fetch_Data_With_Error() {
+        
+        // Given
+        let url = URL(string: "https://www.google.com")!
+        let sut = News(with: url)
+        let mockURLSession = URLSessionMock()
+        mockURLSession.testError = AppPurchasingError.unknown
+        let expectation = XCTestExpectation(description: "Downloading stories")
+        
+        sut.fetch(with: mockURLSession) {
+            XCTAssertEqual(mockURLSession.dataTask?.testError, AppPurchasingError.unknown)
+            expectation.fulfill()
+        }
+        
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
 }
