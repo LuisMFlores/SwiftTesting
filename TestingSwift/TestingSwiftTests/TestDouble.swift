@@ -68,16 +68,4 @@ class TestDouble: XCTestCase {
         XCTAssertEqual(message, "Power Off")
     }
     
-    func test_Store_Buying_Without_User() {
-        // Given
-        let sut = StoreMock()
-        
-        // When
-        let _ = sut.buy(product: "Word of World Crash")
-        
-        // Then
-        XCTAssertFalse(sut.wasAssertionSuccessfull)
-        
-    }
-    
 }
