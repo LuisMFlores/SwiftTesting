@@ -29,21 +29,33 @@ class XCUITestSandboxUITests: XCTestCase {
 
     func testExample() throws {
         // UI tests must launch the application that they test.
+//        let app = XCUIApplication()
+//        app.launch()
+//
+//        app.textFields.element.tap()
+//
+//        app.keys["t"].tap()
+//        app.keys["e"].tap()
+//        app.keys["s"].tap()
+//        app.keys["t"].tap()
+//        app.keyboards.buttons["Return"].tap()
+//
+//        app.sliders["Completion"].swipeRight()
+//        app.segmentedControls.buttons["Omega"].tap()
+//        app.buttons["Blue"].tap()
+//        app.alerts["Blue"].buttons["OK"].tap()
+        
         let app = XCUIApplication()
-        app.launch()
-        
         app.textFields.element.tap()
-        
-        app.keys["t"].tap()
-        app.keys["e"].tap()
-        app.keys["s"].tap()
-        app.keys["t"].tap()
+        app.textFields.element.typeText("test")
         app.keyboards.buttons["Return"].tap()
-        
-        app.sliders["Completion"].swipeRight()
+
+        app.sliders["50%"].swipeRight()
         app.segmentedControls.buttons["Omega"].tap()
         app.buttons["Blue"].tap()
         app.alerts["Blue"].buttons["OK"].tap()
+
+        XCTAssertTrue(app.alerts["Blue"].exists)
     }
     
     func testLabelCopiesTextField() {
@@ -88,4 +100,6 @@ class XCUITestSandboxUITests: XCTestCase {
             }
         }
     }
+    
+  
 }
