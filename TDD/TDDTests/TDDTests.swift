@@ -29,5 +29,13 @@ class TDDTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testReadingBookAddsToLibrary() {
+        // Given
+        let bookToBuy = "Great Expectations"
+        var user = User()
+        user.buy(bookToBuy)
+        XCTAssertTrue(user.owns(bookToBuy))
+    }
 
 }
