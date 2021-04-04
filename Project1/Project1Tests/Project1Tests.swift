@@ -10,24 +10,93 @@ import XCTest
 
 class Project1Tests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testLoadingImages() {
+        
+        // Given
+        let sut = ViewController()
+        
+        // When
+        sut.loadViewIfNeeded()
+        
+        // Then
+        XCTAssertEqual(sut.pictures.count, 10, "There should be 10 times.")
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testTableExists() {
+        // Given
+        let sut = ViewController()
+        
+        // When
+        sut.loadViewIfNeeded()
+        
+        // Then
+        XCTAssertNotNil(sut.tableView)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testTableViewHasCorrectRowCount() {
+        // Given
+        let sut = ViewController()
+        
+        // When
+        sut.loadViewIfNeeded()
+        
+        // Then
+        XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), 10, "There should be 10 pictures showing")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testEachCellHasTheCorrectText() {
+        // Given
+        let sut = ViewController()
+        
+        // When
+        sut.loadViewIfNeeded()
+        
+        for (index, picture) in sut.pictures.enumerated() {
+            let indexPath = IndexPath(row: index, section: 0)
+            let cell = sut.tableView(sut.tableView, cellForRowAt: indexPath)
+            
+            // Then
+            XCTAssertEqual(cell.textLabel?.text, picture)
         }
     }
-
+    
+    func testCellsHaveDisclosureIndicator() {
+        // Given
+        let sut = ViewController()
+        
+        // When
+        sut.loadViewIfNeeded()
+        
+        let numberOfCells = sut.tableView(sut.tableView, numberOfRowsInSection: 0)
+        (0..<numberOfCells).forEach {
+            let indexPath = IndexPath(row: $0, section: 0)
+            let cell = sut.tableView(sut.tableView, cellForRowAt: indexPath)
+            
+            XCTAssertEqual(cell.accessoryType, .disclosureIndicator)
+        }
+    }
+    
+    func testViewControllersUsesLargeTitles() {
+        // Given
+        let sut = ViewController()
+        let _ = UINavigationController(rootViewController: sut)
+        
+        // When
+        sut.loadViewIfNeeded()
+        
+        XCTAssertTrue(sut.navigationController?.navigationBar.prefersLargeTitles ?? false)
+    }
+    
+    func testViewControllerHasStormViewerTitle() {
+        // Given
+        let sut = ViewController()
+        
+        // When
+        sut.loadViewIfNeeded()
+        
+        // Then
+        XCTAssertEqual(sut.title, "Storm Viewer")
+    }
+    
+    
 }
