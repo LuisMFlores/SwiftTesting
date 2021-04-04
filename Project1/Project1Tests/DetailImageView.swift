@@ -60,26 +60,33 @@ class DetailImageView: XCTestCase {
     func testSelectingImageShowsDetails() {
 
         let sut = ViewController()
-        let navigationController = UINavigationController(rootViewController: sut)
         let testIndexPath = IndexPath(row: 0, section: 0)
+        var selectedImage: String?
         
-        sut.tableView(sut.tableView, didSelectRowAt: testIndexPath)
-        let expectation = XCTestExpectation(description: "Selecting a tableview cell")
-        
-        DispatchQueue.main.async {
-            expectation.fulfill()
+        sut.pictureSelectionAction = {
+            selectedImage = $0
         }
         
-        wait(for: [expectation], timeout: 1)
+        sut.tableView(sut.tableView, didSelectRowAt: testIndexPath)
         
-        guard let detail = navigationController.topViewController as? DetailViewController else { XCTFail("Unable to push detail view controller") ; return }
+        XCTAssertEqual(selectedImage, "nssl0049.jpg")
+    }
+    
+    func testSelectingImageShowsDetailsImage() {
+        let sut = ViewController()
+        let testIndexPath = IndexPath(row: 0, section: 0)
+        let selectedImage = UIImage(named: "nssl0049.jpg", in: Bundle.main, with: nil)
         
-        let fileToTest = "nssl0049.jpg"
-        let expectedImage = UIImage(named: fileToTest)
-        detail.selectedImage = fileToTest
-        detail.loadViewIfNeeded()
+        sut.pictureSelectionAction = {
+            
+            let detailVC = DetailViewController()
+            detailVC.selectedImage = $0
+            detailVC.loadViewIfNeeded()
+            
+            XCTAssertEqual(detailVC.imageView.image, selectedImage)
+        }
         
-        XCTAssertEqual(detail.imageView.image, expectedImage)
+        sut.tableView(sut.tableView, didSelectRowAt: testIndexPath)
     }
 
 }

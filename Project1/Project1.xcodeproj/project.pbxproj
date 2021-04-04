@@ -27,6 +27,7 @@
 		ABCDB08A26183427007D91AD /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABCDB08026183427007D91AD /* nssl0034.jpg */; };
 		ABCDB0922619090D007D91AD /* DetailImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDB0912619090D007D91AD /* DetailImageView.swift */; };
 		ABCDB09726190950007D91AD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDB09626190950007D91AD /* DetailViewController.swift */; };
+		ABCDB0A2261953D4007D91AD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCDB0A1261953D3007D91AD /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		ABCDB08026183427007D91AD /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		ABCDB0912619090D007D91AD /* DetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageView.swift; sourceTree = "<group>"; };
 		ABCDB09626190950007D91AD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		ABCDB0A1261953D3007D91AD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				ABCDB04C2618341B007D91AD /* Assets.xcassets */,
 				ABCDB04E2618341B007D91AD /* LaunchScreen.storyboard */,
 				ABCDB0512618341B007D91AD /* Info.plist */,
+				ABCDB0A1261953D3007D91AD /* MainCoordinator.swift */,
 			);
 			path = Project1;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				ABCDB04826183418007D91AD /* ViewController.swift in Sources */,
 				ABCDB04426183418007D91AD /* AppDelegate.swift in Sources */,
 				ABCDB04626183418007D91AD /* SceneDelegate.swift in Sources */,
+				ABCDB0A2261953D4007D91AD /* MainCoordinator.swift in Sources */,
 				ABCDB09726190950007D91AD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@ class ViewController: UITableViewController {
     
     // MARK: Properties
     var pictures = [String]()
+    var pictureSelectionAction: ((String) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +45,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailVC = DetailViewController()
-        let selectedImage = pictures[indexPath.row]
-        detailVC.selectedImage = selectedImage
-        navigationController?.pushViewController(detailVC, animated: true)
+        pictureSelectionAction?(pictures[indexPath.row])
     }
 
 }
